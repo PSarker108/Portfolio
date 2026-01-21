@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Pronoy Sarker Amit</title>
+
+    <!-- Reuse Home page CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Projects Section */
+        .projects {
+            padding: 120px 9%;
+            min-height: 100vh;
+            background: #1f242d;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .projects-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 42px;
+            margin-bottom: 25px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s forwards;
+            animation-delay: 0.3s;
+        }
+
+        .section-title span {
+            color: #7cf03d;
+        }
+
+        /* Skills */
+        .skills {
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s forwards;
+            animation-delay: 0.6s;
+        }
+
+        .skills h3 {
+            color: #7cf03d;
+            margin-bottom: 10px;
+        }
+
+        .skills p {
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        /* Projects list */
+        .project-item {
+            background: #1a1d23;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #7cf03d;
+            border-radius: 6px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s forwards;
+        }
+
+        /* Sequential animation for each project */
+        .project-item:nth-child(1) { animation-delay: 0.9s; }
+        .project-item:nth-child(2) { animation-delay: 1.2s; }
+        .project-item:nth-child(3) { animation-delay: 1.5s; }
+        .project-item:nth-child(4) { animation-delay: 1.8s; }
+        .project-item:nth-child(5) { animation-delay: 2.1s; }
+        .project-item:nth-child(6) { animation-delay: 2.4s; }
+        .project-item:nth-child(7) { animation-delay: 2.8s; }
+
+        .project-item h4 {
+            color: #7cf03d;
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #e0e0e0;
+        }
+
+        .project-item span {
+            font-weight: 600;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .projects {
+                padding: 100px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Projects <span>Overview</span></h2>
+
+            <!-- Skills -->
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                <p>Programming: C, C++, Java, Python</p>
+                <p>Web: HTML, CSS, PHP</p>
+                <p>Databases: SQLite, CSV handling</p>
+                <p>Tools: Android Studio, Tkinter, AutoCAD, Microsoft Office</p>
+                <p>Specialization: AI, Machine Learning, NLP (Fake News Detection)</p>
+            </div>
+
+            <!-- Projects List -->
+            <div class="project-item">
+                <h4>Conflict-Free Class Scheduler</h4>
+                <p><span>Tools:</span> Python 3.11, Tkinter, CSV module, collections</p>
+                <p><span>Description:</span> Automated scheduling system assigning time slots, rooms, and teachers without conflicts. Backtracking approach similar to N-Queen. GUI supports CSV-based schedule generation.</p>
+            </div>
+
+            <div class="project-item">
+                <h4>Early Stroke Risk Detection Using Machine Learning</h4>
+                <p><span>Tools:</span> Python, ML Libraries</p>
+                <p><span>Description:</span> Academic team project studying stroke prediction models. Implemented preprocessing, feature selection, and ML pipeline from selected research. Focus on dataset handling and ML experimentation.</p>
+            </div>
+
+            <div class="project-item">
+                <h4>GUVGS Website</h4>
+                <p><span>Tools:</span> HTML, CSS, PHP</p>
+                <p><span>Description:</span> Full website for Green University Virtual Gaming Society with homepage, events, committee, gallery, and contact form. Designed as an engagement hub for the gaming community.</p>
+            </div>
+
+            <div class="project-item">
+                <h4>Quiz Application with Socket Programming</h4>
+                <p><span>Tools:</span> Java</p>
+                <p><span>Description:</span> Real-time quiz system using socket programming. Supports multiple concurrent clients, GUI client interface, real-time scoring, and server-managed sessions.</p>
+            </div>
+
+            <div class="project-item">
+                <h4>TrackNManage App</h4>
+                <p><span>Tools:</span> Android Studio, SQLite</p>
+                <p><span>Description:</span> Android app for student fare and route management. Admins manage students, fares, and routes; students view routes, buy tickets, and manage passwords. Separate dashboards for Admin and Student users.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
