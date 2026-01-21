@@ -258,52 +258,94 @@ a{
     }
 }
 
-/*****About*****/
+/*****Mobile Update*****/
 
-.about {
-    padding: 100px 9%;
-    background: #1f242d;
-    color: #fff;
+/* General adjustments for mobile */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* hidden by default, toggle with JS if needed */
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
+    /* Bars animation (optional hide or adjust) */
+    .bars-animation {
+        transform: scale(0.7);
+    }
+
+    /* Home section */
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .home-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-info h2 {
+        font-size: 1rem;
+    }
+
+    .home-info p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .btn-sci {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .sci {
+        justify-content: center;
+    }
+
+    /* Home image */
+    .home-img {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .home-img img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.about-container {
-    max-width: 900px;
-}
+/* Very small screens (phones) */
+@media (max-width: 480px) {
+    .home-info h1 {
+        font-size: 1.5rem;
+    }
 
-.section-title {
-    font-size: 42px;
-    margin-bottom: 25px;
-}
+    .home-info h2 {
+        font-size: 0.9rem;
+    }
 
-.section-title span {
-    color: #7cf03d;
-}
-
-.about-text {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 18px;
-    color: #e0e0e0;
-}
-
-.about-extra {
-    display: flex;
-    gap: 50px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.about-block {
-    min-width: 250px;
-}
-
-.about-block h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #7cf03d;
-}
-
-.about-block p {
-    font-size: 15px;
-    margin-bottom: 6px;
+    .home-info p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
 }
